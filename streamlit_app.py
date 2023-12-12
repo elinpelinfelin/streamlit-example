@@ -3,6 +3,10 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+from trubrics.integrations.streamlit import FeedbackCollector
+
+collector = FeedbackCollector()
+collector.st_feedback(feedback_type="issue")
 """
 # Welcome to Streamlit!
 
